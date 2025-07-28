@@ -5,8 +5,14 @@ const cloudinary = require('cloudinary').v2;
 
 const app = express();
 
-const PORT = 3000;
+
 const MAIN_URL="http://localhost";
+
+
+//const PORT = 3000; -> esto solo sirve para el local host
+const PORT = process.env.PORT || 3000;
+
+
 
 app.use(cors());
 // Middlewares esenciales (DEBEN estar antes de tus rutas)
