@@ -6,7 +6,9 @@ const cloudinary = require('cloudinary').v2;
 const app = express();
 
 
-const MAIN_URL="http://localhost";
+//const MAIN_URL="http://localhost"; -> esto solo para localhost
+
+const MAIN_URL="https://pompositiendabackend.onrender.com"; 
 
 
 //const PORT = 3000; -> esto solo sirve para el local host
